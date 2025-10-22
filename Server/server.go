@@ -1,4 +1,4 @@
-package Includes
+package Server
 
 import (
 	"net/http"
