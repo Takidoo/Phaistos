@@ -9,3 +9,7 @@ func GameHandle(w http.ResponseWriter, r *http.Request) {
 func AdminHandle(w http.ResponseWriter, r *http.Request) {
 	return
 }
+
+func AutorHandle(w http.ResponseWriter, r *http.Request) {
+	return
+}
