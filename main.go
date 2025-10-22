@@ -1,6 +1,10 @@
 package main
 
+import (
+	"fmt"
+)
+
 func main() {
-	print("Main Func")
+	fmt.Print("Main Func")
 	return
 }
