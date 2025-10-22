@@ -5,8 +5,8 @@ import (
 )
 
 func Start() error {
-	//Route vers le jeu
-	http.HandleFunc(GAME_ROUTE, nil)
+	//Routes
+	http.HandleFunc(GAME_ROUTE, GameHandle)
 
 	//Démarrage du serveur
 	err := http.ListenAndServe(PORT, nil)
