@@ -5,7 +5,11 @@ import (
 )
 
 func Start() error {
-	err := http.ListenAndServe(":4545", nil)
+	//Route vers le jeu
+	http.HandleFunc(GAME_ROUTE, nil)
+
+	//Démarrage du serveur
+	err := http.ListenAndServe(PORT, nil)
 	if err != nil {
 		return err
 	}
