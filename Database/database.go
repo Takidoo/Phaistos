@@ -37,6 +37,12 @@ func CreateTables() {
 			register TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 			account_disabled BOOLEAN DEFAULT false
 		);`,
+		`CREATE TABLE IF NOT EXISTS sessions (
+			session TEXT NOT NULL,
+            user_id TEXT INT NOT NULL,
+			PRIMARY KEY (session),
+			FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+		);`,
 	}
 
 	for _, query := range queries {

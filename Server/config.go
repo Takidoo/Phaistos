@@ -6,4 +6,4 @@ const ADMIN_PASSWORD = "Phaistos2025!"
 
 const GAME_ROUTE = "/play"
 const ADMIN_ROUTE = "/admin"
-const AUTOR_ROUTE = "/autor"
+const USER_ROUTE = "/profile"
