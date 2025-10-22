@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
+	"Phaistos/Server"
 )
 
 func main() {
-	fmt.Print("Main Func")
+	Server.Start()
 	return
 }
